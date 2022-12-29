@@ -17,8 +17,9 @@ Las "llaves" de encriptación que utilizaremos son las siguientes:
 - Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
 
 Por ejemplo:
-`"gato" => "gaitober"`
-`gaitober" => "gato"`
+
+- `"gato" => "gaitober"`
+- `gaitober" => "gato"`
 
 - La página debe tener campos para
   inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre as dos opciones.
@@ -34,11 +35,11 @@ Create an application that encrypts and decrypts texts.
 
 The encryption "keys" we will use are the following:
 
-`The letter "e" is converted to "enter"`.
-`The letter "i" is converted to "imes"`.
-`The letter "a" is converted to "ai"`.
-`The letter "o" is converted to "ober"`.
-`The letter "u" is converted to "ufat"`.
+- `The letter "e" is converted to "enter"`.
+- `The letter "i" is converted to "imes"`.
+- `The letter "a" is converted to "ai"`.
+- `The letter "o" is converted to "ober"`.
+- `The letter "u" is converted to "ufat"`.
 
 **Requirements:**
 
@@ -48,8 +49,9 @@ The encryption "keys" we will use are the following:
 - It must be possible to convert a word for the encrypted version also return an encrypted word for its original version.
 
 For example:
-`"gato" => "gaitober"`.
-`gaitober" => "gato"`.
+
+- `"gato" => "gaitober"`.
+- `gaitober" => "gato"`.
 
 - The page must have fields for
   The page must have fields for inserting the text to be encrypted or decrypted, and the user must be able to choose between the two options.
