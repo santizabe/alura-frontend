@@ -1,13 +1,11 @@
-const encryptText = (e) => {
-  e.preventDefault();
-  const textToEncrypt = document.getElementById("encrypt").value;
-  const encrypted = encrypt(textToEncrypt);
+const displayText = (text) => {
   const p = document.querySelector(".text");
-  p.innerHTML = encrypted;
-  console.log(encrypted);
+  p.innerHTML = text;
 };
 
-const encrypt = (text) => {
+const encrypt = (e) => {
+  e.preventDefault();
+  let text = document.getElementById("text").value;
   var newStr = "";
   for (let i = 0; i < text.length; i++) {
     switch (text.charAt(i)) {
@@ -30,8 +28,22 @@ const encrypt = (text) => {
         newStr += text.charAt(i);
     }
   }
-  return newStr;
+  displayText(newStr);
 };
 
-const button = document.querySelector(".encrypt");
-button.onclick = encryptText;
+const decrypt = (e) => {
+  e.preventDefault();
+  let text = document.getElementById("text").value;
+  if (text.includes("ai")) text = text.replaceAll("ai", "a");
+  if (text.includes("enter")) text = text.replaceAll("enter", "e");
+  if (text.includes("imes")) text = text.replaceAll("imes", "i");
+  if (text.includes("ober")) text = text.replaceAll("ober", "o");
+  if (text.includes("ufat")) text = text.replaceAll("ufat", "u");
+  displayText(text);
+};
+
+const encryptText = document.querySelector(".encrypt");
+const decryptText = document.querySelector(".decrypt");
+
+encryptText.onclick = encrypt;
+decryptText.onclick = decrypt;
