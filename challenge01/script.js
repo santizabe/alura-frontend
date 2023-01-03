@@ -28,6 +28,14 @@ const encrypt = (e) => {
         newStr += text.charAt(i);
     }
   }
+  const copy = document.getElementById("copy");
+  const message = document.querySelector(".message");
+  const pikachu = document.querySelector(".pikachu");
+  const span = document.querySelector(".span");
+  span.style.display = "none";
+  pikachu.style.display = "none";
+  message.style.display = "none";
+  copy.style.display = "block";
   displayText(newStr);
 };
 
@@ -42,8 +50,19 @@ const decrypt = (e) => {
   displayText(text);
 };
 
+const copy = async () => {
+  try {
+    const text = document.querySelector(".text");
+    navigator.clipboard.writeText(text.innerHTML);
+  } catch {
+    alert("Couldn't copy text");
+  }
+};
+
 const encryptText = document.querySelector(".encrypt");
 const decryptText = document.querySelector(".decrypt");
+const copyBtn = document.querySelector("#copy");
 
 encryptText.onclick = encrypt;
 decryptText.onclick = decrypt;
+copyBtn.onclick = copy;

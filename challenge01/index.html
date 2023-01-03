@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles.css">
-    <title>Document</title>
-</head>
-<body>
-    <label id="enc">
-    <input type="text" id="text">
-    <button class="encrypt">Encrypt</button>
-    <button class="decrypt">Decrypt</button>
-    <div class="encrypted container">
-    <p class="text"></p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Encrypt site</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container1">
+        <input type="textarea" id="text" placeholder="ingrese el texto" />
+        <div>
+          <button class="button encrypt">Encrypt</button>
+          <button class="button decrypt">Decrypt</button>
+        </div>
+      </div>
+      <div class="container">
+        <img
+          src="https://i.pinimg.com/originals/dc/7f/8c/dc7f8c5d9fc42fe09f31c132bffa576b.png"
+          alt="detective-pikachu"
+          class="pikachu"
+        />
+        <p class="text"></p>
+        <p class="message">Ningun mensaje fue encontrado</p>
+        <p class="span">
+          Ingresa el texto que desees encriptar o desencriptar.
+        </p>
+        <button class="button" id="copy">copy</button>
+      </div>
     </div>
-    <button>copy</button>
     <script src="/script.js"></script>
-    
-</body>
+  </body>
 </html>
