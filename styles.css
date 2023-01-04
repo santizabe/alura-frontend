@@ -124,9 +124,14 @@ input::placeholder {
   border: 1px solid #0a3871;
 }
 
-img {
+.no-msg-found {
   display: block;
   margin: 0 auto;
   margin-top: 10vh;
   margin-bottom: 10vh;
+}
+
+.alura {
+  margin-top: 5px;
+  margin-left: 5px;
 }
