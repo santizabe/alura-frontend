@@ -123,3 +123,10 @@ input::placeholder {
   background-color: #d8dfe8;
   border: 1px solid #0a3871;
 }
+
+img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
