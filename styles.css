@@ -86,20 +86,12 @@ input::placeholder {
   color: #343a40;
 }
 
-.pikachu {
-  width: 300px;
-  height: 50vh;
-  margin-left: 50px;
-}
-
 .span {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  /* or 24px */
-
   text-align: center;
 }
 
@@ -134,6 +126,6 @@ input::placeholder {
 }
 
 .alura {
-  margin-top: 5px;
-  margin-left: 5px;
+  margin-top: 5vh;
+  margin-left: 5vh;
 }
