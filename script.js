@@ -30,7 +30,7 @@ const encrypt = (e) => {
   }
   const copy = document.getElementById("copy");
   const message = document.querySelector(".message");
-  const pikachu = document.querySelector(".pikachu");
+  const pikachu = document.querySelector(".no-msg-found");
   const span = document.querySelector(".span");
   span.style.display = "none";
   pikachu.style.display = "none";
@@ -47,6 +47,15 @@ const decrypt = (e) => {
   if (text.includes("imes")) text = text.replaceAll("imes", "i");
   if (text.includes("ober")) text = text.replaceAll("ober", "o");
   if (text.includes("ufat")) text = text.replaceAll("ufat", "u");
+
+  const copy = document.getElementById("copy");
+  const message = document.querySelector(".message");
+  const pikachu = document.querySelector(".no-msg-found");
+  const span = document.querySelector(".span");
+  span.style.display = "none";
+  pikachu.style.display = "none";
+  message.style.display = "none";
+  copy.style.display = "block";
   displayText(text);
 };
 
