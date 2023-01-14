@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/alura-frontend/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="https://www.aluracursos.com/assets/favicon.1647533644.ico"
+      type="image/x-icon"
+    />
+    <title>Encrypt site</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="/alura-frontend/public/alura.svg"
+        alt="alura icon"
+        class="alura"
+      />
+    </header>
+    <div class="main">
+      <div class="container1">
+        <input type="textarea" id="text" placeholder="ingrese el texto" />
+        <div>
+          <button class="button encrypt">Encrypt</button>
+          <button class="button decrypt">Decrypt</button>
+        </div>
+      </div>
+      <div class="container">
+        <img
+          src="/alura-frontend/public/challenge_01.png"
+          alt="no-msg-found"
+          class="no-msg-found"
+        />
+        <p class="text"></p>
+        <p class="message">Ningun mensaje fue encontrado</p>
+        <p class="span">
+          Ingresa el texto que desees encriptar o desencriptar.
+        </p>
+        <button class="button" id="copy">copy</button>
+      </div>
+    </div>
+    <script src="/alura-frontend/script.js"></script>
+  </body>
+</html>
