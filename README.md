@@ -60,5 +60,3 @@ For example:
 \*\*Extras
 
 - A button to copy the encrypted/decrypted text to the transfer section, i.e. with the same functionality as `ctrl+C` or the `copy` option in the applications menu.
-
-Translated with www.DeepL.com/Translator (free version)
